@@ -1,0 +1,55 @@
+service: assignment
+
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+# you can overwrite defaults here
+  stage: dev
+  region: ap-south-1 # mumbai region asia
+
+plugins:
+  - serverless-offline
+
+custom:
+  # serverless offline plugin setup
+  serverless-offline:
+    httpPort: 4000  
+
+functions:
+  create:
+    handler: handler.create
+    events:
+      - http:
+          path: create
+          method: post
+
+  delete:
+    handler: handler.delete
+    events:
+      - http:
+          path: delete
+          method: delete
+   
+  findOne:
+    handler: handler.findOne
+    events:
+      - http:
+          path: findOne
+          method: get
+
+  moveFile:
+    handler: handler.moveFile
+    events:
+      - http:
+          path: moveFile
+          method: put
+
+  Alert:
+    handler: handler.Alert
+    events:
+      - http:
+          path: Alert
+          method: put

@@ -1,0 +1,21 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "directory-tree": "^2.2.6",
+    "fs": "0.0.1-security",
+    "fs-extra": "^9.1.0",
+    "mongojs": "^3.1.0",
+    "mongoose": "^5.11.15",
+    "node-notifier": "^9.0.0",
+    "serverless-offline": "^6.8.0"
+  }
+}
