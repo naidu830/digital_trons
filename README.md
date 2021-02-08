@@ -23,3 +23,6 @@ fs and fs-extra for managing folders/files.
 8.To test locally added plugins:serverless-offline and httpport:4000 in serverless.yml.
 
 9.Finally to run locally use command 'serverless offline start'.
+
+
+Attached POSTMAN collection of API's with named postman_collection folder inside the assignment folder.
